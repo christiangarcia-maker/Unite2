@@ -8,10 +8,10 @@ public class Exercise04 {
 		// Creación del escaner.
 		Scanner ch = new Scanner(System.in);
 		
-		// Declaración de variable donde se almacena el primer número elegido por el usuario.
+		// Declaración de variable que almacena el primer número elegido por el usuario.
 		int numeroUno;
 		
-		// Declaración de variable donde se almacena el segundo número elegido por el usuario.
+		// Declaración de variable que almacena el segundo número elegido por el usuario.
 		int numeroDos;
 		
 		// Pregunta al usuario por el primer número.

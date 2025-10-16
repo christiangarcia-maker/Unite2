@@ -8,13 +8,13 @@ public class Exercise10 {
 		// Creación del escaner.
 		Scanner ch = new Scanner(System.in);
 		
-		// Declaración de la varaible donde se almacena los segundos.
+		// Declaración de la varaible que almacena los segundos.
 		int segundos;
 		
-		// Declaración de la varaible donde se almacena los minutos.
+		// Declaración de la varaible que almacena los minutos.
 		int minutos;
 		
-		// Declaración de la varaible donde se almacena las horas.
+		// Declaración de la varaible que almacena las horas.
 		int hora;
 		
 		System.out.println("introduce los segundos");

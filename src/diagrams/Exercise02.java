@@ -21,7 +21,7 @@ public class Exercise02 {
 		} else {
 			System.out.println("No eres mayor de edad");
 		}
-		
+
 		// Cierre del escaner.
 		ch.close();
 
