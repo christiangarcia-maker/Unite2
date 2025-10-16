@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercise01 {
 
 	public static void main(String[] args) {
-		// Creación de nuestro escaner.
+		// Creación del escaner.
 		Scanner ch = new Scanner(System.in);
 		
 		// Declaramos la variable donde se almacena la edad del usuario.
