@@ -1,10 +1,37 @@
 package boletin01;
 
+import java.util.Scanner;
+
 public class Exercise05 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Preparamos el scanner.
+		Scanner reader = new Scanner(System.in);
+				
+		// Declaramos las variables de las respuestas de los usuarios.
+		String respuesta1;
+		String respuesta2;
 
+		// Preguntamos a los usuarios.
+		System.out.println("Jugador1, ¿piedra, papel o tijeras? ");
+		respuesta1 = reader.nextLine();
+
+		System.out.println("Jugador2, ¿piedra, papel o tijeras? ");
+		respuesta2 = reader.nextLine();
+
+		// Declaramos el condicional.
+		if (respuesta1.equals(respuesta2)) {
+			System.out.println("Empate.");
+		} else if (respuesta1.equals("piedra") && respuesta2.equals("tijeras")
+				|| respuesta1.equals("tijeras") && respuesta2.equals("papel")
+				|| respuesta1.equals("papel") && respuesta2.equals("piedra")) {
+			System.out.println("Jugador1 ganador.");
+		} else {
+			System.out.println("Jugador2 ganador.");
+		}
+
+		// Cerramos el scanner.
+		reader.close();
 	}
 
 }
