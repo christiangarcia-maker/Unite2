@@ -5,32 +5,37 @@ import java.util.Scanner;
 public class Exercise05 {
 
 	public static void main(String[] args) {
-		// Preparamos el scanner.
+		// Creación del escaner.
 		Scanner reader = new Scanner(System.in);
-				
-		// Declaramos las variables de las respuestas de los usuarios.
-		String respuesta1;
-		String respuesta2;
 
-		// Preguntamos a los usuarios.
+		// Declaración de variable donde se almacena la elección del primer jugador.
+		String primerJugador;
+
+		// Declaración de variable donde se almacena la elección del seundo jugador.
+		String segundoJugador;
+
+		// Preguntamos al primer jugador por su elección.
 		System.out.println("Jugador1, ¿piedra, papel o tijeras? ");
-		respuesta1 = reader.nextLine();
+		primerJugador = reader.nextLine();
 
+		// Preguntamos al primer jugador por su elección.
 		System.out.println("Jugador2, ¿piedra, papel o tijeras? ");
-		respuesta2 = reader.nextLine();
+		segundoJugador = reader.nextLine();
 
-		// Declaramos el condicional.
-		if (respuesta1.equals(respuesta2)) {
+		// Si la elección del primer y segundo jugar es la misma, será empate, si no
+		// pasará al siguiente if, donde haremos todas las condicionales donde el primer
+		// jugador gana, si ningua se cumple, por descarte el segundo jugador gana.
+		if (primerJugador.equals(segundoJugador)) {
 			System.out.println("Empate.");
-		} else if (respuesta1.equals("piedra") && respuesta2.equals("tijeras")
-				|| respuesta1.equals("tijeras") && respuesta2.equals("papel")
-				|| respuesta1.equals("papel") && respuesta2.equals("piedra")) {
-			System.out.println("Jugador1 ganador.");
+		} else if (primerJugador.equals("piedra") && segundoJugador.equals("tijeras")
+				|| primerJugador.equals("tijeras") && segundoJugador.equals("papel")
+				|| primerJugador.equals("papel") && segundoJugador.equals("piedra")) {
+			System.out.println("!El primer jugador gana¡");
 		} else {
-			System.out.println("Jugador2 ganador.");
+			System.out.println("!El segundo jugador gana¡");
 		}
 
-		// Cerramos el scanner.
+		// Cierre del escaner.
 		reader.close();
 	}
 

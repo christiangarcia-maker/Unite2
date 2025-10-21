@@ -6,27 +6,29 @@ public class Exercise04 {
 
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
-		
-		//Declaramos la variable.
-		int num;
-		
-		//Preguntamos al usuario.
+
+		// Declaramos la variable donde almacena el número dado por el usuario.
+		int numero;
+
+		// Preguntamos al usuario por un número entre un rango.
 		System.out.println("Introduzca un número entre 0 y 99999: ");
-		num = reader.nextInt();
-				
-		//Declaramos el condicional.
-		if (num <= 9) {
+		numero = reader.nextInt();
+
+		// Calculamos el rango en el que se encuentra el número, consiguiendo así la
+		// cantidad de cifras correspondiente.
+		if (numero <= 9) {
 			System.out.println("El número introducido tiene una cifra. ");
-		} else if (num <= 99 && num >= 10) {
+		} else if (numero <= 99 && numero >= 10) {
 			System.out.println("El número introducido tiene dos cifras. ");
-		} else if (num <= 999 && num >= 100) {
+		} else if (numero <= 999 && numero >= 100) {
 			System.out.println("El número introducido tiene tres cifras. ");
-		} else if (num <= 9999 && num >= 1000) {
+		} else if (numero <= 9999 && numero >= 1000) {
 			System.out.println("El número introducido tiene cuatro cifras. ");
-		} else if (num <= 99999 && num >= 10000) {
+		} else if (numero <= 99999 && numero >= 10000) {
 			System.out.println("El número introducido tiene cinco cifras. ");
 		}
-		
+
+		// Cierre del escaner.
 		reader.close();
 
 	}
