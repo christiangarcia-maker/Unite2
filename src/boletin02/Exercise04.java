@@ -36,7 +36,7 @@ public class Exercise04 {
 		case "CINCO" ->
 			5;
 		case "SEIS" ->
-			numero1 = 6;
+			6;
 		default ->
 			-1;
 		};
