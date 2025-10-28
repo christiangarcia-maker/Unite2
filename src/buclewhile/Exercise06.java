@@ -23,6 +23,7 @@ public class Exercise06 {
 		}
 		
 		System.out.println("El arbol más alto mide: " + arbolAlto + "cm");
+		
 		reader.close();
 
 	}
