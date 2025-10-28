@@ -7,19 +7,19 @@ public class Exercise06 {
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		
-		double arbol;
+		double arbolAltura;
 		
 		double arbolAlto = 0;
 		
 		System.out.println("Introduce la altura del arból.");
-		arbol = reader.nextDouble();
+		arbolAltura = reader.nextDouble();
 		
-		while (arbol != -1) {
-			if (arbol>arbolAlto) {
-				arbolAlto = arbol;
+		while (arbolAltura != -1) {
+			if (arbolAltura>arbolAlto) {
+				arbolAlto = arbolAltura;
 			}
 			System.out.println("Introduce la altura del arból.");
-			arbol = reader.nextDouble();
+			arbolAltura = reader.nextDouble();
 		}
 		
 		System.out.println("El arbol más alto mide: " + arbolAlto + "cm");
