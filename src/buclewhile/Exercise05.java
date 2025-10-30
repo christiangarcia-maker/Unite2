@@ -26,15 +26,15 @@ public class Exercise05 {
 		System.out.println("Coloque la edad del alumno.");
 		edadAlumnos = reader.nextInt();
 
+		// Si la edad del alumno es mayor o igual que cero, se suma la edad de alumno a
+		// la variable sumaEdad y aumenta el contador del número de alumnos.
 		while (edadAlumnos >= 0) {
-			// Se suma la edad de alumno a la variable sumaEdad.
 			sumaEdad += edadAlumnos;
-			// Aumenta en uno la cantidad de alumnos.
 			numeroAlumnos++;
-			
+
+			// Si los alumnos son mayores de 18, aumenta en uno la cantidad de alumnos
+			// mayores.
 			if (edadAlumnos >= 18) {
-				// Si los alumnos son mayores de 18, aumenta en uno la cantidad de alumnos
-				// mayores.
 				alumnosMayores++;
 			}
 			// Pregunta por la edad del alumno.
@@ -48,13 +48,13 @@ public class Exercise05 {
 
 		// Imprime en pantalla la suma de las edades.
 		System.out.println("La suma de las edades de los alumnos es de: " + sumaEdad + ".");
-		
+
 		// Imprime en pantalla la media de las edades.
 		System.out.println("La media de las edades de los alumnos es de: " + edadMedia + ".");
-		
+
 		// Imprime en pantalla los alumnos que son mayores de edad.
 		System.out.println("Hay " + alumnosMayores + " alumnos que son mayores de edad.");
-		
+
 		// Imprime en pantalla el número de alumnos.
 		System.out.println("Hay " + numeroAlumnos + " alumnos.");
 
