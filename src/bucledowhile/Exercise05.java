@@ -19,7 +19,6 @@ public class Exercise05 {
 		int numeroAleatorio;
 		
 		do {
-			
 			numeroAleatorio = aleatorio.nextInt(min,max);
 			System.out.println(numeroAleatorio);
 			resultado = reader.next();
@@ -27,7 +26,7 @@ public class Exercise05 {
 			if (resultado.equals("Menor")) {
 				max = numeroAleatorio;
 			} else if (resultado.equals("Mayor")) {
-				min = numeroAleatorio;
+				min = numeroAleatorio+1;
 			}
 		}while (!resultado.equals("Iguales"));
 		
