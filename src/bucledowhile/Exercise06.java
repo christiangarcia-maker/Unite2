@@ -1,9 +1,41 @@
 package bucledowhile;
 
+import java.util.Scanner;
+
 public class Exercise06 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Creación del scanner.
+		Scanner reader = new Scanner(System.in);
+		
+		// Declaramos las variables de las respuestas de los usuarios.
+		String respuesta1;
+		String respuesta2;
+		String opcion = "S";
+		
+		do {
+			// Preguntamos a los usuarios.
+			System.out.println("Jugador1, ¿piedra, papel o tijeras? ");
+			respuesta1 = reader.nextLine();
+
+			System.out.println("Jugador2, ¿piedra, papel o tijeras? ");
+			respuesta2 = reader.nextLine();
+			
+			if (respuesta1.equals(respuesta2)) {
+				System.out.println("Empate.");
+			} else if (respuesta1.equals("piedra") && respuesta2.equals("tijeras")
+					|| respuesta1.equals("tijeras") && respuesta2.equals("papel")
+					|| respuesta1.equals("papel") && respuesta2.equals("piedra")) {
+				System.out.println("¡Ha ganado el jugador 1!");
+			} else {
+				System.out.println("¡Ha ganado el jugador 2!");
+			}
+			System.out.println("Si quiere seguir jugando pulse S");
+			opcion = reader.nextLine();
+		} while (opcion.equals("S"));
+		
+		// Cierre del scanner.
+		reader.close();
 
 	}
 
