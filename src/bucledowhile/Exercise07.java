@@ -64,7 +64,7 @@ public class Exercise07 {
 			System.out.println("E. SALIR");
 			respuesta = reader.next();
 
-		} while (respuesta.equals("E"));
+		} while (!respuesta.equals("E"));
 
 		// Cerramos el scanner
 		reader.close();
